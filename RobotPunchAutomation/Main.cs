@@ -15,9 +15,6 @@ namespace RobotPunchAutomation
         
         public static async Task Main(string[] args)
         {
-            //IWebDriver driver = new ChromeDriver();
-            //driver.Navigate().GoToUrl("https://youtube.com");
-            
             //Make API Call
             await ApiRequestFactory.SendRequest(_coinGeickoHealthCheck);
         }
