@@ -1,6 +1,8 @@
+using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using RobotPunchAutomation.Resources.Helpers;
 
 namespace RobotPunchAutomation.Tests
 {
@@ -26,7 +28,12 @@ namespace RobotPunchAutomation.Tests
         {
             _driver.Navigate().GoToUrl("https://youtube.com");
         }
-        
-        
+
+        [Test]
+        public async Task ApiSmokeTest()
+        {
+            //Make API Call
+            await ApiRequestFactory.SendRequest(ApiEndpoint.CoinGecko._coinGeickoHealthCheck);
+        }
     }
 }
