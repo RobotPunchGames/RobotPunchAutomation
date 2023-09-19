@@ -68,7 +68,9 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Resources\Helpers\ApiEndpointList.cs" />
         <Compile Include="Resources\Helpers\ApiRequestFactory.cs" />
+        <Compile Include="Resources\Helpers\TestingURLs.cs" />
         <Compile Include="Resources\PageModels\CoinGecko\CoinGecko_PriceCheck.cs" />
+        <Compile Include="Resources\WebElements\RobotPunchPOM.cs" />
         <Compile Include="Tests\SmokeTest.cs" />
     </ItemGroup>
     <ItemGroup>
